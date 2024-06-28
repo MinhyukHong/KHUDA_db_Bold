@@ -1,0 +1,11 @@
+1. 본인 노트북에서 npm 설치 안 된다면 npm을 먼저 설치하세요.
+
+2.
+cd /path/to/typescript extension
+npm install
+
+3. npm run build
+
+4. 크롬에서 dist 폴더를 넣으세요
+
+5. 성공하시길
