@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Velog Custom Button Extension",
+    "version": "1.0",
+    "description": "Adds a custom button to the Velog editor.",
+    "permissions": ["activeTab"],
+    "content_security_policy": {
+        "sandbox": "sandbox allow-scripts allow-forms allow-popups allow-modals; script-src 'self' 'wasm-unsafe-eval' 'inline-speculation-rules' http://localhost:* http://127.0.0.1:* https://velog.io/; object-src 'self';"
+    },
+    "content_scripts": [
+        {
+        "matches": ["https://velog.io/write*"],
+        "js": ["main.js"]
+        }
+    ],
+    "icons": {
+        "48": "icon.png"
+        }
+    }
